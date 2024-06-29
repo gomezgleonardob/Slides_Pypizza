@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>TRADUCCIÓN DE LA DOCUMENTACIÓN DE PYTHON</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/atom-one-light.css">
+
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="plugin/fontawesome/css/all.min.css" />
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+      <section class="center" style="font-size: 20px;">
+        <h1>TRADUCCIÓN DE LA DOCUMENTACIÓN DE PYTHON</h1>
+        <ul>
+          <li class="fragment">Presentación</li>
+          <li class="fragment">¿Comó Inicio?</li>
+          <li class="fragment">Colaboradores</li>
+          <li class="fragment">Issues</li>
+          <li class="fragment">Traducción</li>
+          <li class="fragment">Pull-request</li>
+          <li class="fragment">Bot</li>
+          <li class="fragment">Métricas</li>
+        </ul>
+      </section>
+
+      <section style="font-size: 32x;">
+        <h1 class="fragment">Presentación</h1>
+        <dl>
+          <dt class="fragment"><i class="fas fa-smile"> Leonardo Gómez</i></dt>
+          <dt class="fragment"> <i class="fab fa-github"> @gomezgleonardob </i></dt>
+          <dt class="fragment"> <i class="fab fa-instagram"> @gomezgleonardob </i></dt>
+          
+        </dl>
+      </section>
+
+      
+       
+      <section style="font-size: 24px; display: block;" hidden="" aria-hidden="true" class="future">
+        <h1>¿CÓMO INICIO?</h1>
+       <p>La traducción inicio el 1 de mayo del 2020.Se partió desde el tutorial que existía en la <b>Página de Python Argentina</b> para facilitar la traducción se migro archivos .po ya que estos permiten manejar distintos idiomas para su traducción.<b> Hace aproximadamente cuatro años la documentacion fue acepta en el repositorio oficial de Python</b></p>
+
+       <br>Link del Repositorio<br>
+       <a href="https://github.com/python/python-docs-es">https://github.com/python/python-docs-es</a>
+     
+       <br>Link de la documentación oficial<br>
+       <a href="https://docs.python.org/es/3/">https://docs.python.org/es/3/</a>
+  
+
+     </section>
+
+     <section style="font-size: 24px; display: block;" hidden="" aria-hidden="true" class="future">
+      <h1>COLABORADORES</h1>
+      <p>Para la  traducción  colaboran personas de distintas partes del mundo.</p>
+      <ul>
+        <li class="fragment" data-fragment-index="0">260 personas en el grupo de Telegram.</li>
+        <li class="fragment" data-fragment-index="1">178 issue abiertas/1063 abierta</li>
+        <li class="fragment" data-fragment-index="2">10 pull request abiertas/1574 cerradas</li>
+        <li class="fragment" data-fragment-index="3">4299 commits enviados</li>
+      </ul>
+     </section>
+
+     <section style="font-size: 24px; display: none;" hidden="" aria-hidden="true" class="future">
+      <h1>¿CÓMO COLABORO?</h1>
+    
+      <ul>
+        <li class="fragment" data-fragment-index="0">Se hace un fork del repositorio <a href="https://github.com/python/python-docs-es">https://github.com/python/python-docs-es</a></li>
+        <li class="fragment" data-fragment-index="1">Busco un issue abierto pido que se me asigne </li>
+        <li class="fragment" data-fragment-index="2">Envió la traducción y creo un pull request</li>
+        <li class="fragment" data-fragment-index="3">Luego un colaborador hará un review</li>
+      </ul>
+      <img class="fragment" alignment="center " width="95%" height="auto" src="img/fork.png" alt="" data-fragment-index="0">
+     </section>
+
+     <section style="font-size: 24px; display: none;" hidden="" aria-hidden="true" class="future">
+      <h1>FORK</h1>
+    
+      <pre class="fragment">
+        <code class="fragment" class="lhpython3" data-trim >
+          #Clona el fork del repositorio que acabas de crear:
+
+          git clone git@github.com:usuariogithub/python-docs-es.git
+          
+          #Ingresa en la carpeta que git clone creó en tu computadora:
+          
+          cd python-docs-es/
+          
+          #Agrega el repositorio original como «upstream»:
+          
+          git remote add upstream https://github.com/python/python-docs-es.git
+          
+          #(Opcional) Crea un entorno virtual y actívalo:
+          
+          python -m venv env
+          source env/bin/activate   # macOS y Linux
+          env\Scripts\activate.bat  # Windows
+          
+          #(Opcional) Instala los requerimientos del proyecto:
+          
+          pip install -r requirements.txt
+          
+        </code>
+</pre>
+     </section>
+     
+     <section style="font-size: 24px; display: block;" hidden="" aria-hidden="true" class="future">
+      <h1>ISSUES</h1>
+      <p> Tenemos una <a href="https://github.com/python/python-docs-es/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+no%3Aassignee+translate">lista de issues en GitHub </a> en dónde vamos coordinando el trabajo realizado para no traducir dos veces lo mismo. El proceso para traducir un archivo es el siguiente:</p>
+      <ul>
+        <li class="fragment" data-fragment-index="0">Elige cualquiera de los issues que no están asignados a otra persona.</li>
+        <li class="fragment" data-fragment-index="1">Deja un comentario en el issue diciendo que quieres trabajar en él.</li>
+        <li class="fragment" data-fragment-index="2">Espera a que un administrador te asigne el issue.</li>
+        <li class="fragment" data-fragment-index="3">¡Empieza a traducir!</li>
+      </ul>
+     </section>
+
+    
+
+     <section style="font-size: 24px; display: block;" hidden="" aria-hidden="true" class="future">
+      <h1>TRADUCCIÓN</h1>
+      <p>Una breve guía de terminos que te pueden servir como referencia<a href=" https://python-docs-es.readthedocs.io/es/3.10/translation-memory.html"> Memoria de Traducción </a></p> 
+      <p> Tenemos una <a href="https://github.com/python/python-docs-es/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+no%3Aassignee+translate"> lista de issues en GitHub </a> en dónde vamos coordinando el trabajo realizado para no traducir dos veces lo mismo. El proceso para traducir un archivo es el siguiente:</p>
+      <pre class="fragment">
+        <code class="fragment" class="lhpython3" data-trim >
+          
+
+    #Selecciona un archivo para traducir
+
+    #Verifica que estás en la rama principal del repositorio, 3.12
+
+    git checkout 3.12
+
+    #Crea una rama nueva en base al artículo en el que vayas a trabajar. 
+    
+    git checkout -b traduccion-glosario
+
+    Empezamos a traducir###
+
+    #Cuando hayas terminado tu sesión,lo envias a GitHub
+    
+    git add library/glosario.po
+    git commit -m 'Traducido archivo library/glosario'
+    git push origin traduccion-glosario
+
+  
+          
+        </code>
+</pre>
+     </section> <section style="font-size: 24px; display: block;" hidden="" aria-hidden="true" class="future">
+      <h1>PULL REQUEST</h1>
+      <p>Pasos para realizar el pull request</p>
+      <ul>
+        <li class="fragment" data-fragment-index="0"> Pull Request escribe Closes #<número de issue> (así se cierra automáticamente cuando se hace merge) </li>
+        <li class="fragment" data-fragment-index="1">Espera que pase los test de CI</li>
+        <li class="fragment" data-fragment-index="2">Un reviewer revise tu PR</li>
+      </ul>
+     </section>
+             
+   
+   
+      <section style="font-size: 22px; display: none;" hidden="" aria-hidden="true" class="future">
+      <h1>BOT</h1>
+       <p>  Hay un bot hecho de la comunidad para monitorear la actividad del repositorio </p>
+
+       <br>Link del Bot<br>
+       <a href="https://github.com/cmaureir/python-docs-es-telegram-bot">https://github.com/cmaureir/python-docs-es-telegram-bot</a>
+    
+
+       <p> Entre las acciones que realiza este se encuentran </p>
+   
+       <ul>
+        <li><b>/progress</b>: to get a general summary </li>
+        <li><b>/progress</b> section: to get the details of the section</li>
+        <li><b>/prs</b>: to get a list of the open PRs</li>
+        <li><b>/prs</b> <id> : to get the details of the Pull-request<id></id></id></li>
+      </ul>
+
+      </section>
+
+      <section style="font-size: 24px; display: none;" hidden="" aria-hidden="true" class="future">
+        <h1>MÉTRICAS</h1>
+        <br> A continuación detallaremos los issues<br>
+        <img class="fragment" alignment="center " width="95%" height="auto" src="img/fre.png" alt="" data-fragment-index="0">
+      </section>
+
+    
+
+
+      <section style="font-size: 24px; display: none;" hidden="" aria-hidden="true" class="future">
+        <h1>GRACIAS POR SU ATENCIÓN</h1>
+       
+      </section>
+   
+        <footer class="footer fragment">
+          
+        </footer>
+      
+    </div>
+  <div class="backgrounds"><div class="slide-background center present" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;" data-controls-layout="bottom-right" data-controls-back-arrows="faded"><button class="navigate-left" aria-label="previous slide" disabled="disabled"><div class="controls-arrow"></div></button><button class="navigate-right enabled highlight" aria-label="next slide"><div class="controls-arrow"></div></button><button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button><button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);" id="aria-status-div" aria-live="polite" aria-atomic="true">
+        TRADUCCIÓN
+        DOCUMENTACION OFICIAL PYTHON 3.12
+      </div></div>
+
+      <footer class="footer fragment">
+
+      </footer>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      history: true,
+      center: false,
+      maxScale: 0.7,
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+
+</html>
